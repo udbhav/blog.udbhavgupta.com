@@ -191,18 +191,14 @@
   <body>
     <a href="http://www.tumblr.com/theme/106" class="install"></a>
     <div id="container">
-      <div id="left">
-        <pre>
-          Udbhav Gupta
-          उद्भव गुप्ता
+      <p>Udbhav Gupta | उद्भव गुप्ता</p>
 
-          <a href="http://mrtwinsister.com">Mr Twin Sister</a>
-          <a href="http://blog.udbhavgupta.com" class="active">Tumblr</a>
-          <a href="http://twitter.com/udbhavgupta">Twitter</a>
-          <a href="http://instagram.com/udbhav">Instagram</a>
-          <a href="http://github.com/udbhav">Github</a>
-        </pre>
-      </div>
+      <p>
+        <a href="http://mrtwinsister.com">Mr Twin Sister</a><br/>
+        <a href="http://twitter.com/udbhavgupta">Twitter</a><br/>
+        <a href="http://instagram.com/udbhav">Instagram</a><br/>
+        <a href="http://github.com/udbhav">Github</a><br/>
+      </p>
 
       <div id="right">
   	    {block:Posts}
@@ -309,23 +305,6 @@
   		    {/block:PermalinkPagination}
   	    </div>
       </div>
-      <div class="clear"></div>
     </div>
-    {block:IfDisqusShortname}
-    <script type="text/javascript">
-      //<![CDATA[
-(function() {
-  var links = document.getElementsByTagName('a');
-  var query = '?';
-  for(var i = 0; i < links.length; i++) {
-    if(links[i].href.indexOf('#disqus_thread') >= 0) {
-      query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
-    }
-  }
-  document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/{text:Disqus Shortname}/get_num_replies.js' + query + '"></' + 'script>');
-  })();
-  //]]>
-    </script>
-    {/block:IfDisqusShortname}
   </body>
 </html>
